@@ -1,36 +1,98 @@
 # MarioSweeper
 
-Run `main.py` to start the game.
+A fun twist on the classic Minesweeper game featuring Mario characters and elements.
 
-## Project Overview
+[![Demo Video](https://img.youtube.com/vi/AIlOtQemjjY/0.jpg)](https://youtu.be/AIlOtQemjjY)
 
-MarioSweeper is a game inspired by Minesweeper. The core logic is similar:  
-- The board is a grid with hidden "flowers" (mines).
-- Clicking a square reveals empty spaces or numbers, indicating how many flowers are adjacent.
-- Safe squares may uncover more spaces.
-- Mario follows the player's mouse within the cleared area.
-- Right-clicking places a turtle shell (flag).
-- If a flower is clicked, Mario is "eaten" by the flower.
+## Game Overview
 
-## Requirements
+MarioSweeper combines the classic Minesweeper gameplay with the charming world of Mario. The game features:
 
-- Install the `cpu-graphics` library.
-- The "Super Mario 256" font must be installed (included as a `.ttf` file).
+- Classic Minesweeper mechanics with a Mario-themed twist
+- Mario character that follows your cursor in cleared areas
+- Turtle shells as flags
+- Fun animations and sound effects
+- Multiple difficulty levels
 
-## Shortcut Commands
+## Getting Started
 
-- `m` — Move
-- `r` — Reset the game
+### Prerequisites
 
-## Citations
+- Python 3.6 or higher
+- `cpu-graphics` library
+- "Super Mario 256" font (included in the repository)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/MarioSweeper.git
+   cd MarioSweeper
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   pip install cpu-graphics
+   ```
+
+3. Install the included "Super Mario 256" font:
+   - On Windows: Right-click the `.ttf` file and select "Install"
+   - On macOS: Double-click the `.ttf` file and click "Install Font"
+   - On Linux: Copy the `.ttf` file to `~/.local/share/fonts/`
+
+### How to Play
+
+1. Run the game:
+   ```bash
+   python main.py
+   ```
+
+2. **Game Rules:**
+   - Left-click to reveal a square
+   - Right-click to place/remove a turtle shell (flag)
+   - Numbers show how many flowers are adjacent to that square
+   - Clear the board without clicking any flowers to win
+   - If you click a flower, Mario gets eaten!
+
+3. **Controls:**
+   - `M` - Toggle movement mode
+   - `R` - Reset the current game
+   - `ESC` - Quit the game
+
+## Project Documentation
+
+Additional project documentation and design materials are available in the `TP3` folder:
+
+- `Design Documentation.pdf` - Detailed design specifications and implementation notes
+- `Storyboard.png` - Visual representation of game flow and user interface
+
+## Game Features
+
+- **Multiple Difficulty Levels**: Choose from different board sizes and flower counts
+- **Interactive Mario**: Mario follows your cursor in cleared areas
+- **Sound Effects**: Classic Mario sounds for actions and events
+- **Animations**: Fun animations for wins and losses
+- **Responsive Design**: Works on various screen sizes
+
+## Credits
+
+### Assets Used
 
 **Images:**
-- Mario: [supersmashbrosfanon.fandom.com](https://supersmashbrosfanon.fandom.com/wiki/8-Bit_Mario)
-- Turtle Shell: [angelapingel.com](https://angelapingel.com/this-is-part-of-ongoing-series-of-posts-2/) (background removed)
-- Game loss and win animations: AI-generated from gooey.ai
+- Mario: [Super Smash Bros Fanon Wiki](https://supersmashbrosfanon.fandom.com/wiki/8-Bit_Mario)
+- Turtle Shell: [Angela Pingel](https://angelapingel.com/this-is-part-of-ongoing-series-of-posts-2/) (background removed)
+- Game Over/Win Animations: AI-generated from gooey.ai
 
 **Sounds:**
-- All sounds from: [myinstants.com](https://www.myinstants.com/en/search/?name=mario)
+- All sound effects from [MyInstants](https://www.myinstants.com/en/search/?name=mario)
 
-**General:**
-- All content outside of the animations is owned by Nintendo. Animations use Nintendo characters.
+### Legal Notice
+This project is a fan-made game created for educational and entertainment purposes. All Mario-related content is property of Nintendo. The animations use Nintendo characters under fair use for non-commercial purposes.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
